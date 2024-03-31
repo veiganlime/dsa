@@ -39,18 +39,18 @@ public class bubblesort {
 // second variat 
     private static void bubblesort(int[] numbers) {
 
-            for(int i = 0; i < numbers.length - 1; i++){
+        for(int i = 0; i < numbers.length - 1; i++){
 
-                for(int j = 0; j < numbers.length - i - 1; j++){
+            for(int j = 0; j < numbers.length - i - 1; j++){
 
-                    if (numbers[j] >= numbers[j + 1]){
-                        
-                        swap(numbers, j, j + 1);
+                if (numbers[j] >= numbers[j + 1]){
+                    
+                    swap(numbers, j, j + 1);
 
-                    }
                 }
             }
         }
+    }
 
     private static void swap(int[] numbers, int index1, int index2) {
 
