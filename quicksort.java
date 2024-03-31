@@ -12,13 +12,13 @@ public class quicksort {
         for(int i = 0; i < numbers.length; i++){
             numbers[i] = random.nextInt(100000);
         }
-      //  System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbers));
         long startTime = System.currentTimeMillis();
 
         quicksort_base(numbers, 0, numbers.length -1);
 
         long endTime = System.currentTimeMillis();        
-      //  System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbers));
         System.out.println("Base quicksort took about " + (endTime - startTime) + "ms");
 
 
@@ -27,7 +27,7 @@ public class quicksort {
         quicksort_median(numbers_2, 0, numbers.length -1);
 
         long endTime2 = System.currentTimeMillis();        
-      //  System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbers));
         System.out.println("Median of three quicksort took about " + (endTime2 - startTime2) + "ms");
     }
 
