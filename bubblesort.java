@@ -12,14 +12,14 @@ public class bubblesort {
         System.out.println(Arrays.toString(numbers));
         long startTime = System.currentTimeMillis();
 
-        bubblesort(numbers);
+        bubbleSort(numbers);
         
         long endTime = System.currentTimeMillis();        
         System.out.println(Arrays.toString(numbers));
         System.out.println("Took " + (endTime - startTime) + "ms");
     }
 // first variant
-    // private static void bubblesort(int[] numbers) {
+    // private static void bubbleSort(int[] numbers) {
 
     //     boolean swapped = true;
     //     while (swapped){
@@ -37,7 +37,7 @@ public class bubblesort {
     // }
 
 // second variat 
-    private static void bubblesort(int[] numbers) {
+    private static void bubbleSort(int[] numbers) {
 
         for(int i = 0; i < numbers.length - 1; i++){
 
