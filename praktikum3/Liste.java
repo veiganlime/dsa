@@ -19,10 +19,30 @@ public class Liste {
     // int hashFunktion(String x, int b) {
     //     return b - 1; // Hash-Funktion-Implementierung
     // }
+    /*
+       	x ist der Eingabestring (wird nicht genutzt).
+	    b ist die Anzahl der Buckets.
+	    Die Rückgabe b-1 bedeutet, dass alle Strings immer im letzten Bucket landen (Index 4 bei B = 5).
+        Alle Strings werden immer auf denselben Bucket 4 abgebildet, weil die Hashfunktion aktuell nur b-1 zurückgibt.
+     */
 
     int hashFunktion(String x, int b) {
         return Math.abs(x.hashCode()) % b;
     }
+    /*
+        Strings werden auf verschiedene Buckets verteilt, statt nur auf einen einzigen (bisher b-1).
+	    Kollisionsreduktion: Die Hashwerte der Strings werden durch Modulo auf die Anzahl der Buckets abgebildet, 
+        was Kollisionen minimiert.
+
+     */
+
+
+
+
+
+
+
+
 
     // int hashFunktion(String x, int i, int b) {
     //     int h1 = hash1(x, b); // Primäre Hashfunktion
